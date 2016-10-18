@@ -30,7 +30,7 @@ https://atlas.hashicorp.com/boxes/search
 ### Install a BOX in Vagrant
 Add the **.box** with the name *centos7*
 ```sh
-vagrant box add centos6 /.../centos6.box
+vagrant box add centos7 centos7.box
 ```
 
 ### Edit settings
