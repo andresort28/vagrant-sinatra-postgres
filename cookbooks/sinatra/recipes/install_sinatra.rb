@@ -48,3 +48,11 @@ bash "open port" do
 	iptables -A INPUT -p tcp -m tcp --dport 8585 -j ACCEPT
 	EOH
 end
+
+bash "execute_services" do
+  user "root"
+  cwd "/home/vagrant/api"
+  code <<-EOH
+  ruby app.rb -o 0.0.0.0 -p 8585
+  EOH
+end
